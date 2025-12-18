@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://2i057y2lhk2u"]
+
+[ext_resource type="Texture2D" uid="uid://bwnawumtkxwbq" path="res://icon.svg" id="1_wsate"]
+[ext_resource type="PackedScene" uid="uid://h2v3f1ms5803" path="res://Scenes/killzone.tscn" id="2_kjpuc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kjpuc"]
+atlas = ExtResource("1_wsate")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t2m80"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kjpuc")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7p0xe"]
+radius = 8.0
+height = 16.0
+
+[node name="Base Enemy" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.125, 0.125)
+sprite_frames = SubResource("SpriteFrames_t2m80")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_7p0xe")
+
+[node name="Killzone" parent="." instance=ExtResource("2_kjpuc")]
