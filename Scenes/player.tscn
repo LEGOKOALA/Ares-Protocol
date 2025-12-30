@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cwucb2ok1ctwd"]
 
-[ext_resource type="Script" uid="uid://b7mcoq731hqpk" path="res://Scripts/player.gd" id="1_cvnsp"]
+[ext_resource type="Script" uid="uid://ctc33y7h8isan" path="res://Scripts/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://bwnawumtkxwbq" path="res://icon.svg" id="2_6t5aa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
@@ -23,6 +23,7 @@ radius = 16.0
 height = 32.0
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 3
 script = ExtResource("1_cvnsp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -32,4 +33,5 @@ sprite_frames = SubResource("SpriteFrames_i3pqv")
 animation = &"Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 10
 shape = SubResource("CapsuleShape2D_hqtel")

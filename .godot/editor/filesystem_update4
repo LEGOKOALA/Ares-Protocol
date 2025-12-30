@@ -1,6 +1,6 @@
-res://player.tscn
-res://Scenes/player.tscn
 res://Scenes/Game.tscn
+res://Scenes/player.tscn
 res://Scenes/base_enemy.tscn
-res://killzone.gd
 res://Scenes/killzone.tscn
+res://Scripts/base_enemy.gd
+res://easy_mele_enemy.tscn

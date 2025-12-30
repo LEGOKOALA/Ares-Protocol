@@ -1,6 +1,8 @@
 CollisionShape2D
-Area2D
 AnimatedSprite2D
+Node2D
+Timer
+Area2D
 CharacterBody2D
 TileMapLayer
 Camera2D

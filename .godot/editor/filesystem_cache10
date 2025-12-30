@@ -1,7 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1766102177
+::res://::1766441850
 icon.svg::CompressedTexture2D/CompressedTexture2D::3957452511880720066::1766020706::1766100900::1::::<><><>0<>0<>0efd7829712f8c2d66cdad8ecdcf80ce<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-killzone.gd::GDScript::6760268576168890712::1766102177::0::1::::<>Area2D<><>0<>0<><>::
 README.md::TextFile/TextFile::-1::1766020912::0::1::::<><><>0<>0<><>::
 Test.tscn::PackedScene/PackedScene::8099162704508995467::1766024878::0::1::::<><><>0<>0<><>::uid://ocqr4kaowgws::::res://icon.svg
 ::res://addons/::1766100820
@@ -18,9 +17,11 @@ utils.gd::GDScript/GDScript::5251015809120159908::1766020912::0::1::::<>RefCount
 godotwaka2.png::CompressedTexture2D/CompressedTexture2D::7026850610005011835::1766020912::1766100901::1::::<><><>0<>0<>810b540a66b6e3b66a13986e88af977c<>res://.godot/imported/godotwaka2.png-7d3d010fb4adc0d433467ab1cc4754ed.ctex::
 godotwaka.png::CompressedTexture2D/CompressedTexture2D::7932361111412089001::1766020912::1766100901::1::::<><><>0<>0<>b1dc139e8838b61e9cb033db1ca4f185<>res://.godot/imported/godotwaka.png-ef0518417b4f997d237759e5551dd05d.ctex::
 icon.jpg::CompressedTexture2D/CompressedTexture2D::3122668444336440389::1766020912::1766100900::1::::<><><>0<>0<>e0b87e0d780caf0d81474113c8024455<>res://.godot/imported/icon.jpg-64f68b30ea939aa8019167e67dffb2db.ctex::
-::res://Scenes/::1766102177
-base_enemy.tscn::PackedScene::1913187017959915418::1766102027::0::1::::<><><>0<>0<><>::uid://bwnawumtkxwbq::::res://icon.svg
-Game.tscn::PackedScene::6932263591379396657::1766102050::0::1::::<><><>0<>0<><>::uid://cwucb2ok1ctwd::::res://Scenes/player.tscn<>uid://bwnawumtkxwbq::::res://icon.svg
-player.tscn::PackedScene::6358408142530463915::1766102177::0::1::::<><><>0<>0<><>::uid://b7mcoq731hqpk::::res://Scripts/player.gd<>uid://bwnawumtkxwbq::::res://icon.svg
-::res://Scripts/::1766102177
-player.gd::GDScript::4657383539373630496::1766101863::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://Scenes/::1766175483
+base_enemy.tscn::PackedScene::1913187017959915418::1766171028::0::1::::<><><>0<>0<><>::uid://bwnawumtkxwbq::::res://icon.svg<>uid://h2v3f1ms5803::::res://Scenes/killzone.tscn
+Game.tscn::PackedScene::6932263591379396657::1766175483::0::1::::<><><>0<>0<><>::uid://cwucb2ok1ctwd::::res://Scenes/player.tscn<>uid://2i057y2lhk2u::::res://Scenes/base_enemy.tscn
+killzone.tscn::PackedScene::548385467255436290::1766171028::0::1::::<><><>0<>0<><>::uid://c3kyvu68rtle3::::res://Scripts/killzone.gd
+player.tscn::PackedScene::6358408142530463915::1766171028::0::1::::<><><>0<>0<><>::uid://ctc33y7h8isan::::res://Scripts/player.gd<>uid://bwnawumtkxwbq::::res://icon.svg
+::res://Scripts/::1766105488
+killzone.gd::GDScript::6760268576168890712::1766105482::0::1::::<>Area2D<><>0<>0<><>::
+player.gd::GDScript::6112309540400362117::1766104266::0::1::::<>CharacterBody2D<><>0<>0<><>::
