@@ -1,2 +1,3 @@
-res://easy_mele_enemy.tscn
+res://Scenes/player.tscn
+res://Scripts/player.gd
 res://Scripts/base_enemy.gd
