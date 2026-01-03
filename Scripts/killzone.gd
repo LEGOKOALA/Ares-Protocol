@@ -1,10 +1,7 @@
 extends Area2D
 
-@onready var timer: Timer = $Timer
+@export var damage := 1
 
 func _on_body_entered(body: Node2D) -> void:
-	print("You Died")
-	timer.start()
-
-func _on_timer_timeout() -> void:
-	get_tree().reload_current_scene()
+	if body.has_method("take_damage"):
+		body.take_damage(damage)

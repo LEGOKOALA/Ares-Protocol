@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://culw7jre442n3"]
+
+[ext_resource type="Script" uid="uid://dg3700l2opnc7" path="res://scripts/base_enemy.gd" id="1_xeo28"]
+[ext_resource type="Texture2D" uid="uid://bwnawumtkxwbq" path="res://icon.svg" id="2_25ykn"]
+[ext_resource type="PackedScene" uid="uid://h2v3f1ms5803" path="res://Scenes/killzone.tscn" id="3_o7wkc"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_25ykn"]
+radius = 8.0
+height = 16.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o7wkc"]
+radius = 8.0
+height = 16.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e4y0c"]
+radius = 9.0
+height = 18.0
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_xeo28")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2.842171e-14, -8)
+scale = Vector2(0.12500001, 0.125)
+texture = ExtResource("2_25ykn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -8)
+shape = SubResource("CapsuleShape2D_25ykn")
+
+[node name="Hurtbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(0, -8)
+shape = SubResource("CapsuleShape2D_o7wkc")
+
+[node name="Killzone" parent="." instance=ExtResource("3_o7wkc")]
+position = Vector2(0, -8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+shape = SubResource("CapsuleShape2D_e4y0c")
